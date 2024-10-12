@@ -18,10 +18,11 @@ input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
         . # # # .
         # . . . #
-        . . . # .
+        . . . . .
         . # . # .
         . . . . .
         `)
+    music.play(music.createSoundExpression(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
     basic.showLeds(`
         . . . # .
         . # . . #
@@ -29,6 +30,7 @@ input.onButtonPressed(Button.B, function () {
         . # . . #
         . . . # .
         `)
+    music.play(music.createSoundExpression(WaveShape.Noise, 54, 54, 255, 0, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.InBackground)
     basic.showIcon(IconNames.Happy)
 })
 input.onGesture(Gesture.Shake, function () {
